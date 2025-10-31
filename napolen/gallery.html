@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Napoleon Artifacts Museum — Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="brand">Napoleon Artifacts</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="gallery-header">
+      <h2>Artifact Gallery</h2>
+      <p class="lead">Click an image to enlarge it. Practice observing details — material, marks, inscriptions, wear.</p>
+    </section>
+
+    <section id="gallery-grid" class="gallery-grid">
+      <figure class="thumb"><img src="images/napoleon-hat.jpg" alt="Napoleon hat" /><figcaption>Napoleon's Hat</figcaption></figure>
+      <figure class="thumb"><img src="images/napoleon-watch.jpg" alt="Gold pocket watch" /><figcaption>Gold Pocket Watch</figcaption></figure>
+      <figure class="thumb"><img src="images/napoleon-tomb.jpg" alt="Napoleon tomb" /><figcaption>Napoleon's Tomb</figcaption></figure>
+    </section>
+
+    <!-- Lightbox modal -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button id="lbClose" class="lb-close" aria-label="Close">×</button>
+      <img id="lbImage" src="" alt="Expanded artifact" />
+      <p id="lbCaption" class="lb-caption"></p>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <p>© 2025 Napoleon Artifacts Museum</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
